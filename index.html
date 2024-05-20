@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"> 
+   <meta https-equiv="x-UA-Compatible"content="IE=edge">
+   <meta name="viewport"content="width=device=width,initial-scale=1.0">
+   <title>Personal Portfolio Website- Easy Tutorial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <a href="#">David.com</a>
+      <ul>
+        <li><a href="ISMS-121.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="services.html">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <section class="header-text">
+  <div>
+  <h1>Hi,I'm <span>David<br> From Nigeria</h1>
+  <p>UI/UX Designer</p>
+</div>
+</section>
+</div>
+
+<!------------about------>
+<div id="about">
+<div class="container">
+  <div class="row">
+    <div class="about-col-1">
+    <img src="images/user.png">
+    </div>
+    <div class="about-col-2">
+      <hi class="sub-title">About</hi>
+      <P>I'm David,An expiring Film director,music producer and aspiring writer studying information science and media studies (isms)in lagos Nigeria.
+        I consider myself a passionate and drive stricken person willing to learn and help in any way i can Although i am not the most intelligent im very skilled and obedience to any tasks or intsructions given. 
+        I have also expressed desires to go into social creation as a way to also expand my brand worldwide.</P>
+    <div class="tab-titles">
+      <div class="skils"><h1 class="tab-links active-link" onclick="opentab('Skills')">Skills</h1>
+      <ol>
+        <li></li>
+      </ol>
+      </div>
+      <div class="experience"><h1 class="tab-links" onclick="opentab('Experience')""}>Experience</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+      <div class="education"><h1 class="tab-links" onclick="opentab('Education')"> Education</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="Skils">
+      <ul>
+        <li><span><UI/UX</span><<br>Producing films and music</li>
+        <li><span>video editing</span><<br>Producing films and music</li>
+        <li><span>Audio editing</span><<br>Producing films and music</li>
+      </ul>
+    </div><div class="tab-contents" id="Experience">
+      <ul>
+        <li><span>2023-Current</span><br>UI/UX aspiring film producer ,music producer and editor at pan atlantic University</li>
+        <li><span>2022-Current</span><br> content creation</li>
+        <li><span> 2023</span><br> video EDITING</li>
+        </ul>
+
+  </div>
+</div><div class="tab-contents" id="Education">
+  <ul>
+    <li><span>2023-Current</span><br>UI/UX Studying information and science and media studies PAU</li>
+    <li><span>2017-2023</span><br> Doregos Private Academy</li>
+    <li><span> 2009-2017</span><br> St BERnadette nursery &Primary School</li>
+    </ul>
+  
+</div>
+
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+     for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+     }
+     for(tabcontents of tabcontents){
+      tabcontents.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+</body>
